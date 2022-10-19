@@ -33,9 +33,10 @@ Step 2: Detect Dogs
 - While looking at the <a href="https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a">dictionary</a>, you will notice that the categories corresponding to dogs appear in an uninterrupted sequence and correspond to dictionary keys 151-268, inclusive, to include all categories from 'Chihuahua' to 'Mexican hairless'. Thus, in order to check to see if an image is predicted to contain a dog by the pre-trained ResNet-50 model, we need only check if the ResNet50_predict_labels function above returns a value between 151 and 268 (inclusive).
 
 Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
-- Now that we have functions for detecting humans and dogs in images, we need a way to predict breed from images. In this step, you will create a CNN that classifies dog breeds. You must create your CNN from scratch (so, you can't use transfer learning yet!), and you must attain a test accuracy of at least 1%.
-Step 4, 
-we used transfer learning to create a CNN using VGG-16 bottleneck features.
+- Now that we have functions for detecting humans and dogs in images, we need a way to predict breed from images. In this step, you will create a CNN that classifies dog breeds. You must create your CNN from scratch, and you must attain a test accuracy of at least 1%.
+-
+Step 4: Use a CNN to Classify Dog Breeds
+- To reduce training time without sacrificing accuracy, we show you how to train a CNN using transfer learning. In the following step, you will get a chance to use transfer learning to train your own CNN.
 
 <a id='step5'></a>
 ## Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
