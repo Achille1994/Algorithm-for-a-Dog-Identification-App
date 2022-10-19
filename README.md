@@ -54,3 +54,23 @@ Write an algorithm that accepts a file path to an image and first determines whe
 - if a dog is detected in the image, return the predicted breed.
 - if a human is detected in the image, return the resembling dog breed.
 - if neither is detected in the image, provide output that indicates an error.
+
+## Assess the Dog Detector¶
+Question: 
+
+- What percentage of the images in human_files_short have a detected dog?
+- What percentage of the images in dog_files_short have a detected dog?
+
+Answer:
+- percentage of the first 100 images in human_files have a detected dog is : 0.0%
+- percentage of the first 100 images in dog_files have a detected dog is : 100.0%
+
+## Assess the Human Face Detector
+Question : 
+
+- What percentage of the first 100 images in human_files have a detected human face?
+- What percentage of the first 100 images in dog_files have a detected human face?
+
+Answer:
+- percentage of the first 100 images in human_files have a detected human face is : 100.0%
+- percentage of the first 100 images in dog_files have a detected human face is :11.0%
