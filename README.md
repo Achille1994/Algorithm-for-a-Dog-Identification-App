@@ -74,3 +74,5 @@ Question :
 Answer:
 - percentage of the first 100 images in human_files have a detected human face is : 100.0%
 - percentage of the first 100 images in dog_files have a detected human face is :11.0%
+
+Ideally, we would like 100% of human images with a detected face and 0% of dog images with a detected face. You will see that our algorithm falls short of this goal, but still gives acceptable performance. We extract the file paths for the first 100 images from each of the datasets and store them in the numpy arrays human_files_short and dog_files_short.
