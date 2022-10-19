@@ -34,8 +34,9 @@ Step 2: Detect Dogs
 
 Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
 - Now that we have functions for detecting humans and dogs in images, we need a way to predict breed from images. In this step, you will create a CNN that classifies dog breeds. You must create your CNN from scratch, and you must attain a test accuracy of at least 1%.
--
-Step 4: Use a CNN to Classify Dog Breeds
+
+<a id='step4'></a>
+Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning VGG-16)
 - To reduce training time without sacrificing accuracy, we show you how to train a CNN using transfer learning. In the following step, you will get a chance to use transfer learning to train your own CNN.
 
 <a id='step5'></a>
