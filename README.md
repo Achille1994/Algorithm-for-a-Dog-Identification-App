@@ -76,3 +76,9 @@ Answer:
 - percentage of the first 100 images in dog_files have a detected human face is :11.0%
 
 Ideally, we would like 100% of human images with a detected face and 0% of dog images with a detected face. You will see that our algorithm falls short of this goal, but still gives acceptable performance. We extract the file paths for the first 100 images from each of the datasets and store them in the numpy arrays human_files_short and dog_files_short.
+
+Step 6: Write your Algorithm
+- please see my dog_app file for algorithme
+
+Step 7: Test Your Algorithm
+- I will test my algorithm with new image. What kind of dog does the algorithm think that you look like? If you have a dog, does it predict your dog's breed accurately? If you have a cat, does it mistakenly think that your cat is a dog? (please test dog_app with. path image of dog or face human)
