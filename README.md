@@ -1,5 +1,6 @@
 # Project: Write an Algorithm for a Dog Identification App
 The goal is to classify images of dogs according to their breed. For this project, Dog Identification App will accept any user-supplied image as input. If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling.
+
 <img width="324" alt="Screenshot 2022-10-19 at 21 54 35" src="https://user-images.githubusercontent.com/74813723/196792982-4bc400dd-3e21-4075-93d9-e7af21c6476c.png">
 
 # The Road Ahead
@@ -21,6 +22,7 @@ Step 0: Import Datasets
 
 Step 1: Detect Humans
 - We use OpenCV's implementation of Haar feature-based cascade classifiers to detect human faces in images. OpenCV provides many pre-trained face detectors, stored as XML files on github. We have downloaded one of these detectors and stored it in the haarcascades directory.
+<img width="308" alt="Screenshot 2022-10-19 at 22 06 51" src="https://user-images.githubusercontent.com/74813723/196794424-eb061a52-d707-4204-925a-ec965dec87ee.png">
 
 <a id='step2'></a>
 Step 2: Detect Dogs
