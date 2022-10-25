@@ -11,8 +11,9 @@ We break the notebook into separate steps :
 - Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
 - Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning)
 - Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
-- Step 6: Write your Algorithm
-- Step 7: Test Your Algorithm
+- Step 6: Write Algorithm
+- Step 7: Test Algorithm
+- Step 8 build the command line application (dog_app)
 
 Step 0: Import Datasets
 - we import a dataset of dog images. We populate a few variables through the use of the load_files function from the scikit-learn library:
@@ -81,3 +82,7 @@ Answer:
 
 Ideally, we would like 100% of human images with a detected face and 0% of dog images with a detected face. You will see that our algorithm falls short of this goal, but still gives acceptable performance. We extract the file paths for the first 100 images from each of the datasets and store them in the numpy arrays human_files_short and dog_files_short.
 
+Step 8 : Dog Identification App commande line application (dog_app)
+ to run dog Identification App (file dog_app.py) in commande line application you need to give your path of face humain or dog image for example:
+ python dog_app.py -- input <image_path>
+ 
