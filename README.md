@@ -57,8 +57,11 @@ Write an algorithm that accepts a file path to an image and first determines whe
 - if neither is detected in the image, provide output that indicates an error.
 -  please see my dog_app file for algorithm
 
-Step 7: Test Your Algorithm
+Step 7 & 8: Test Your Algorithm
 - I will test my algorithm with new image. What kind of dog does the algorithm think that you look like? If you have a dog, does it predict your dog's breed accurately? If you have a cat, does it mistakenly think that your cat is a dog? (please test dog_app with. path image of dog or face human)
+- Dog Identification App commande line application (dog_app)
+ to run dog Identification App (file dog_app.py) in commande line application you need to give your path of face humain or dog image for example:
+ python dog_app.py -- input <image_path>
 
 ## Assess the Dog Detector¶
 Question: 
@@ -82,7 +85,4 @@ Answer:
 
 Ideally, we would like 100% of human images with a detected face and 0% of dog images with a detected face. You will see that our algorithm falls short of this goal, but still gives acceptable performance. We extract the file paths for the first 100 images from each of the datasets and store them in the numpy arrays human_files_short and dog_files_short.
 
-Step 8 : Dog Identification App commande line application (dog_app)
- to run dog Identification App (file dog_app.py) in commande line application you need to give your path of face humain or dog image for example:
- python dog_app.py -- input <image_path>
  
