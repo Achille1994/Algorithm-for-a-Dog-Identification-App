@@ -43,7 +43,7 @@ Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning VGG-16)
 <a id='step5'></a>
 ## Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
 
-You will now use transfer learning to create a CNN that can identify dog breed from images.  Your CNN must attain at least 60% accuracy on the test set.  In this section, you must use the bottleneck features from a different pre-trained model.
+I will now use transfer learning to create a CNN that can identify dog breed from images.  In this section, you must use the bottleneck features from a different pre-trained model. (I took [ResNet-50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) bottleneck features for my project).
 - [VGG-19](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG19Data.npz) bottleneck features
 - [ResNet-50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) bottleneck features
 - [Inception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) bottleneck features
