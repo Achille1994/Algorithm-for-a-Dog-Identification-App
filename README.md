@@ -62,6 +62,7 @@ Step 7 & 8: Test Your Algorithm
 - Dog Identification App commande line application (dog_app)
  to run dog Identification App (file dog_app.py) in commande line application you need to give your path of face humain or dog image for example:
  python dog_app.py -- input <image_path>
+ <img width="452" alt="Screenshot 2022-10-25 at 15 49 49" src="https://user-images.githubusercontent.com/74813723/197791547-d5653fa6-5c6f-477e-b055-0c045b31359d.png">
 
 ## Assess the Dog Detector¶
 Question: 
