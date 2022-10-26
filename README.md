@@ -1,5 +1,8 @@
-# Project: Write an Algorithm for a Dog Identification App
-The goal is to classify images of dogs according to their breed. For this project, Dog Identification App will accept any user-supplied image as input. If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling.
+# Project Overview
+Welcome to the dog breed classifier project. This project uses Convolutional Neural Networks (CNNs)! In this project, I will learn how to build a pipeline to process real-world, user-supplied images. Given an image of a dog, your algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed.
+
+## Write an Algorithm for a Dog Identification App
+The goal is to classify images of dogs according to their breed. For this project, Dog Identification App will accept any user-supplied image as input. If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. Example of output :
 
 <img width="324" alt="Screenshot 2022-10-19 at 21 54 35" src="https://user-images.githubusercontent.com/74813723/196792982-4bc400dd-3e21-4075-93d9-e7af21c6476c.png">
 
