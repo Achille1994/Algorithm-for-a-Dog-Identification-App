@@ -92,29 +92,7 @@ Ideally, we would like 100% of human images with a detected face and 0% of dog i
  # web app : deploy localy
  Starter Code
 The coding for this project can run in IDE environement. Here's the file structure of the project:
-
-- app
-|- template
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|
-|- run.py  # Flask file that runs app
-|
-|- files
-|   |- essential.py  # algorithm  
-|   
-|- haarcascades  
-|   |- haarcascades_frontalface_alt.xml # detect face human
-|   
-|- dog_names.json   # class name of dog 
-|- extract.bottlenneck_features.py  # extract feature for dog detector
-|- save models
-|- weights.best.Resnet50.hdf5 # saved model 
-|
-|- static
-    |- images
-       |- Achille.jpg # saved image load by user
-       |- bulldog.jpg # saved image load by user
+<img width="611" alt="Screenshot 2022-11-25 at 23 31 46" src="https://user-images.githubusercontent.com/74813723/204060546-f35bcb52-ec44-40be-b50e-6e6ae110e679.png">
     
 - README.md
 Running the Web App from the Project Workspace IDE
@@ -125,3 +103,6 @@ Open a new terminal window. You should already be in the workspace folder, but i
 Type in the command line:
 
 python run.py
+
+<img width="1186" alt="Screenshot 2022-11-25 at 22 24 08" src="https://user-images.githubusercontent.com/74813723/204060526-70aa5452-1c94-4344-8180-b93da9dcb6dd.png">
+<img width="1282" alt="Screenshot 2022-11-25 at 22 25 05" src="https://user-images.githubusercontent.com/74813723/204060534-643f0fbf-5d38-4651-8080-f3465d5b8ff6.png">
