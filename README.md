@@ -95,14 +95,10 @@ The coding for this project can run in IDE environement. Here's the file structu
 <img width="611" alt="Screenshot 2022-11-25 at 23 31 46" src="https://user-images.githubusercontent.com/74813723/204060546-f35bcb52-ec44-40be-b50e-6e6ae110e679.png">
     
 - README.md
-Running the Web App from the Project Workspace IDE
-When working in the Project Workspace IDE, here is how to see your Flask app.
+Running the Web App from the Project Workspace IDE. Here is how to see your Flask app. Open a new terminal window. go to app folder be in the workspace.
+Type in the command line: python run.py
 
-Open a new terminal window. You should already be in the workspace folder, but if not, then use terminal commands to navigate inside the folder with the run.py file.
-
-Type in the command line:
-
-python run.py
+Result of my web app below :
 
 <img width="1186" alt="Screenshot 2022-11-25 at 22 24 08" src="https://user-images.githubusercontent.com/74813723/204060526-70aa5452-1c94-4344-8180-b93da9dcb6dd.png">
 <img width="1282" alt="Screenshot 2022-11-25 at 22 25 05" src="https://user-images.githubusercontent.com/74813723/204060534-643f0fbf-5d38-4651-8080-f3465d5b8ff6.png">
