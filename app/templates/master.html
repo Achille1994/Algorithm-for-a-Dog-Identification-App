@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dog identication</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/"> Dog Identification</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="https://github.com/TouyeAchille">
+                         Github
+                      </a>
+                    </li>
+
+                    <li>
+                        <a href="https://medium.com/@touyejunior"> Medium </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/mbogol/"> 
+                          Linkedin
+                         </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="text-center"> Dog Identification Project</h1>
+            <p class="text-center">classify images of dogs according to their breed.</p>
+            <hr />
+            <div class="row">
+                <div class="mb-2">
+
+                    <form action="/go" method="POST" enctype="multipart/form-data">
+
+                        <label for="formFile" class="form-label text-success"> <h3>Load Dog or Human face image</h3> </label>
+                        <input type="file" class="form-control" name="file" id="formFile">
+                        <div class="col-lg-offset-5"> <button type="submit" class="btn btn-lg btn-success">Classify images</button> </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+            {% block message %} {% endblock %}
+        </div>
+    </div>
+
+    <div class="container">
+        {% block content %}
+        <div class="page-header">
+            <h1 class="text-center"> Overview of Dog Breed Classifier</h1>
+        </div>
+
+        <div> This project uses Convolutional Neural Networks (CNNs) in order to classify images of dogs according to their breed. Before Build this classify, the first steps of this project is to build a model that detect if the image contains a human, dog
+            or neither. We use OpenCV's implementation of <strong>Haar feature-based cascade classifiers to detect human faces in images</strong> and we use a <strong>ResNet-50 model to detect dogs in images</strong> . Towards developing an algorithm
+            that could be used as part of a mobile or web app this code will accept any user-supplied image as input. then,
+            <br><br>
+            <ul>
+                <li>if a dog is <strong>detected</strong> in the image, <strong>return the predicted breed</strong>.</li>
+                <li>if a human is <strong>detected</strong> in the image, <strong>return the resembling dog breed </strong></li>
+                <li>if neither is <strong>detected</strong> in the image, we provide output that <strong>indicates an error</strong>.</li>
+            </ul>
+
+            <div class="text-center" id="myDiv"></div>
+            {% endblock %}
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var trace1 = {
+            x: ['Face_Humain', 'Face_Dog'],
+            y: [98.4, 54.75],
+            name: 'Haar cascade classifiers to detect human faces',
+            type: 'bar'
+        };
+
+        var trace2 = {
+            x: ['Face_Humain', 'Face_Dog'],
+            y: [1, 98.6],
+            name: 'Resnet50 classifiers to detect dog faces',
+            type: 'bar'
+        };
+
+        var data = [trace1, trace2];
+
+        var layout = {
+            barmode: 'group',
+            title: 'Percentage of the first 1000 images detected via differents classifiers',
+            title_x: 0.3,
+            yaxis: {
+                title: 'Percentage (%)'
+            },
+            xaxis: {
+                title: 'Image'
+            }
+        };
+
+
+        Plotly.newPlot('myDiv', data, layout);
+    </script>
+</body>
+
+</html>
