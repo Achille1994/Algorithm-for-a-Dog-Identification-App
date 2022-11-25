@@ -89,4 +89,39 @@ Answer:
 
 Ideally, we would like 100% of human images with a detected face and 0% of dog images with a detected face. You will see that our algorithm falls short of this goal, but still gives acceptable performance. We extract the file paths for the first 100 images from each of the datasets and store them in the numpy arrays human_files_short and dog_files_short.
 
- 
+ # web app : deploy localy
+ Starter Code
+The coding for this project can run in IDE environement. Here's the file structure of the project:
+
+- app
+|- template
+| |- master.html  # main page of web app
+| |- go.html  # classification result page of web app
+|
+|- run.py  # Flask file that runs app
+|
+|- files
+|   |- essential.py  # algorithm  
+|   
+|- haarcascades  
+|   |- haarcascades_frontalface_alt.xml # detect face human
+|   
+|- dog_names.json   # class name of dog 
+|- extract.bottlenneck_features.py  # extract feature for dog detector
+|- save models
+|- weights.best.Resnet50.hdf5 # saved model 
+|
+|- static
+    |- images
+       |- Achille.jpg # saved image load by user
+       |- bulldog.jpg # saved image load by user
+    
+- README.md
+Running the Web App from the Project Workspace IDE
+When working in the Project Workspace IDE, here is how to see your Flask app.
+
+Open a new terminal window. You should already be in the workspace folder, but if not, then use terminal commands to navigate inside the folder with the run.py file.
+
+Type in the command line:
+
+python run.py
