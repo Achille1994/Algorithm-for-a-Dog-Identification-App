@@ -62,11 +62,8 @@ Write an algorithm that accepts a file path to an image and first determines whe
 -  please see my dog_app file for algorithm
 
 Step 7 & 8: Test Your Algorithm
-- I will test my algorithm with new image. What kind of dog does the algorithm think that you look like? If you have a dog, does it predict your dog's breed accurately? If you have a cat, does it mistakenly think that your cat is a dog? (please test dog_app with. path image of dog or face human)
-- Dog Identification App commande line application (dog_app)
- to run dog Identification App (file dog_app.py) in commande line application you need to give your path of face humain or dog image for example:
- python dog_app.py -- input <image_path>
- <img width="452" alt="Screenshot 2022-10-25 at 15 49 49" src="https://user-images.githubusercontent.com/74813723/197791547-d5653fa6-5c6f-477e-b055-0c045b31359d.png">
+- We will test our algorithm with new image. What kind of dog does the algorithm think that you look like? If you have a dog, does it predict your dog's breed accurately? If you have a cat, does it mistakenly think that your cat is a dog? please you can app below to check the result
+
 
 ## Assess the Dog Detector¶
 Question: 
