@@ -97,7 +97,7 @@ Ideally, we would like 100% of human images with a detected face and 0% of dog i
  Starter Code
 The coding for this project can run in IDE environement. Here's the file structure of the project:
 
- 
+ <img width="774" alt="Screenshot 2022-11-26 at 10 42 09" src="https://user-images.githubusercontent.com/74813723/204082409-56e083f7-bcb6-4d53-90ba-9ebfd6f1fd42.png">
 
 
 Running the Web App from the Project Workspace IDE. Here is how to see your Flask app. Open a new terminal window. go to app folder be in the workspace.
