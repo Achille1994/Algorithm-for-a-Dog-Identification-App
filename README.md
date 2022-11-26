@@ -2,10 +2,10 @@
 Welcome to the dog breed classifier project. This project uses Convolutional Neural Networks (CNNs)! In this project, I will learn how to build a pipeline to process real-world, user-supplied images. Given an image of a dog, your algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed.
 
 ## About Dataset
-Context
-The Dogs dataset contains images of 133 breeds of dogs from around the world and 8351 total dog images. This dataset can be Download here [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). 
 
-3. We use OpenCV's implementation of Haar feature-based cascade classifiers to detect human faces in images. This dataset can be Download here [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip). 
+1. The Dogs dataset contains images of 133 breeds of dogs from around the world and 8351 total dog images. This dataset can be Download here [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). 
+
+2. We use OpenCV's implementation of Haar feature-based cascade classifiers to detect human faces in images. This dataset can be Download here [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip). 
 
 ## Write an Algorithm for a Dog Identification App
 The goal is to classify images of dogs according to their breed. For this project, Dog Identification App will accept any user-supplied image as input. If a dog is detected in the image, it will provide an estimate of the dog's breed. If a human is detected, it will provide an estimate of the dog breed that is most resembling. Example of output :
