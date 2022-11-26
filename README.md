@@ -104,9 +104,10 @@ The coding for this project can run in IDE environement. Here's the file structu
 
 - open "app" folder in workspace IDE
 - create virtual environement : python3 - venv virtualapp (https://docs.python.org/fr/3/library/venv.html)
-- active the virtual environement : source virtualapp/bin/activate
-- install some libraires to run web app (please see requirements.txt file) : pip freeze > requirements.txt (command to load all libraires)
-- 
+- active the virtual environement : source virtualapp/bin/activate 
+- install some libraires to run web app :pip install flask keras tensorflow numpy opencv-python Pillow pandas
+- load all libraires in. requirement files : pip freeze > requirements.txt 
+- run web app : python flaskapp.py
 
 Here is how to see your Flask app. Open a new terminal window. go to app folder be in the workspace.
 Type in the command line: python flaskapp.py ( to deploy webapp with heroku you need the comment last line begin by "app" in the file flaskapp.py)
