@@ -103,14 +103,14 @@ The coding for this project can run in IDE environement. Here's the file structu
 
 1-Running the Web App from the workspace IDE. 
 
-- open "app" folder in workspace IDE
-- create virtual environement : python3 - venv virtualapp (https://docs.python.org/fr/3/library/venv.html)
+- Open "app" folder in workspace IDE
+- create virtual environement : python3 - venv virtualapp
 - active the virtual environement : source virtualapp/bin/activate 
 - install some libraires to run web app : pip install flask keras tensorflow numpy opencv-python Pillow pandas
 - load all libraires in requirement files : pip freeze > requirements.txt 
 - run web app : python flaskapp.py
 
-if you want to deploy webapp with heroku you need the comment this. line #app.run(host='0.0.0.0', port=3000, debug=True) in the file flaskapp.py and create Procfile file to run webapp. in my case I just run webapp localy and the Result of my web app below :
+remarks : if you want to deploy webapp with heroku you need the comment this line #app.run(host='0.0.0.0', port=3000, debug=True) in the file flaskapp.py and create Procfile file to run webapp. in my case I just run webapp localy and the Result of my web app below :
 
 <img width="1186" alt="Screenshot 2022-11-25 at 22 24 08" src="https://user-images.githubusercontent.com/74813723/204060526-70aa5452-1c94-4344-8180-b93da9dcb6dd.png">
 <img width="1282" alt="Screenshot 2022-11-25 at 22 25 05" src="https://user-images.githubusercontent.com/74813723/204060534-643f0fbf-5d38-4651-8080-f3465d5b8ff6.png">
