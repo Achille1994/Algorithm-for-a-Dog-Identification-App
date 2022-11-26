@@ -96,11 +96,12 @@ Ideally, we would like 100% of human images with a detected face and 0% of dog i
  # web app : deploy localy
  Starter Code
 The coding for this project can run in IDE environement. Here's the file structure of the project:
-<img width="611" alt="Screenshot 2022-11-25 at 23 31 46" src="https://user-images.githubusercontent.com/74813723/204060546-f35bcb52-ec44-40be-b50e-6e6ae110e679.png">
-    
-- README.md
+
+ 
+
+
 Running the Web App from the Project Workspace IDE. Here is how to see your Flask app. Open a new terminal window. go to app folder be in the workspace.
-Type in the command line: python flaskapp.py
+Type in the command line: python flaskapp.py ( to deploy webapp with heroku you need the comment last line begin by "app" in the file flaskapp.py)
 
 Result of my web app below :
 
