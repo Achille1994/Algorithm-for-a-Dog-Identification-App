@@ -51,6 +51,7 @@ I will now use transfer learning to create a CNN that can identify dog breed fro
 - [ResNet-50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) bottleneck features
 - [Inception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) bottleneck features
 - [Xception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) bottleneck features
+Because we have classification problem and we have approximately balance dog categories, we use accuracy score as metrics to evaluate performance of model. 
 
 Step 6: Write your Algorithm
 Write an algorithm that accepts a file path to an image and first determines whether the image contains a human, dog, or neither. Then,
