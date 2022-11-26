@@ -100,7 +100,7 @@ The coding for this project can run in IDE environement. Here's the file structu
     
 - README.md
 Running the Web App from the Project Workspace IDE. Here is how to see your Flask app. Open a new terminal window. go to app folder be in the workspace.
-Type in the command line: python run.py
+Type in the command line: python flaskapp.py
 
 Result of my web app below :
 
