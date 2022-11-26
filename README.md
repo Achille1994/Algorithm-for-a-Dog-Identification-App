@@ -93,14 +93,22 @@ Answer:
 
 Ideally, we would like 100% of human images with a detected face and 0% of dog images with a detected face. You will see that our algorithm falls short of this goal, but still gives acceptable performance. We extract the file paths for the first 100 images from each of the datasets and store them in the numpy arrays human_files_short and dog_files_short.
 
- # web app : deploy localy
+ # deploy localy web app
  Starter Code
 The coding for this project can run in IDE environement. Here's the file structure of the project:
 
  <img width="774" alt="Screenshot 2022-11-26 at 10 42 09" src="https://user-images.githubusercontent.com/74813723/204082409-56e083f7-bcb6-4d53-90ba-9ebfd6f1fd42.png">
 
 
-Running the Web App from the Project Workspace IDE. Here is how to see your Flask app. Open a new terminal window. go to app folder be in the workspace.
+1-Running the Web App from the workspace IDE. 
+
+- open "app" folder in workspace IDE
+- create virtual environement : python3 - venv virtualapp (https://docs.python.org/fr/3/library/venv.html)
+- active the virtual environement : source virtualapp/bin/activate
+- install some libraires to run web app (please see requirements.txt file) : pip freeze > requirements.txt (command to load all libraires)
+- 
+
+Here is how to see your Flask app. Open a new terminal window. go to app folder be in the workspace.
 Type in the command line: python flaskapp.py ( to deploy webapp with heroku you need the comment last line begin by "app" in the file flaskapp.py)
 
 Result of my web app below :
