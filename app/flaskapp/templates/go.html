@@ -1,0 +1,28 @@
+{% extends "master.html" %} {% block title %}Results{% endblock %}
+
+<!-- display load image and predict breed of dog-->
+{% block message %}
+<hr />
+<h4 class="text-center"> <i>Image</i> </h4>
+<div class="text-center">
+    <img class="img-thumbnail" height="400" width="350" alt="Responsive image" src="static/images/{{filename}}">
+</div>
+{% endblock %}
+
+<!-- classification results-->
+{% block content %}
+<h1 class="text-center">Predicted breed</h1>
+<div>
+    {% if predict_breed=="Error, please provide human face or dog image" %}
+    <h3 class="text-center text-danger"> {{predict_breed}} </h3>
+    {% endif %}
+</div>
+<ul class="list-group">
+    {% for category in dog_names %} {% if predict_breed==category %}
+    <li class="list-group-item list-group-item-success text-center">{{category.replace('_', ' ').title()}}</li>
+    {% else %}
+    <li class="list-group-item list-group-item-dark text-center">{{category.replace('_', ' ').title()}}</li>
+    {% endif %} {% endfor %}
+</ul>
+</div>
+{% endblock %}
